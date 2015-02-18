@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<services>
+  <service id="1" run="node" args="{%=name%}.js --broker=$(broker) --defaultExchange=$(exchange) --mssql=$(mssql) --ll=$(logLevel)"/>
+</services>

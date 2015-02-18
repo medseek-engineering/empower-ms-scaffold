@@ -1,0 +1,33 @@
+{
+  "name": "{%=name%}",
+  "version": "1.0.0",
+  "description": "A micro-service for Empower {%=name%} information.",
+  "dependencies": {
+    "microservice-crutch": "^0.0.6",
+    "mssql": "^1.3.0"
+  },
+  "devDependencies": {
+    "bluebird": "^2.3.11",
+    "gulp": "^3.8.9",
+    "gulp-mocha": "^1.1.1",
+    "gulp-util": "^3.0.1",
+    "lodash": "^2.4.1",
+    "minimist": "^1.1.0",
+    "mocha": "^2.0.1",
+    "node-uuid": "^1.4.1",
+    "proxyquire": "^1.0.1",
+    "should": "^4.1.0",
+    "sinon": "^1.11.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/medseek-engineering/empower-ms.git/services/empower-portal-aliases"
+  },
+  "scripts": {
+    "start": "forever start -a -w --minUptime 1000 --spinSleepTime 10000 --uid \"{%=name%}\" {%=name%}",
+    "stop": "forever stop {%=name%}",
+    "test": "node node_modules/mocha/bin/mocha test",
+    "cli": "node {%=name%}.js",
+    "send-get": "node {%=name%}.js --send=get --ll=WARN"
+  }
+}
