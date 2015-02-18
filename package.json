@@ -1,0 +1,27 @@
+{
+  "name": "scaffold",
+  "version": "1.0.0",
+  "description": "Create new micro service from template",
+  "main": "scaffold.js",
+  "bin":{
+    "scaffold":"./scaffold.js"
+  },
+  "preferGlobal": "true",
+  "dependencies": {
+    "fs": "^0.0.2",
+    "commander": "^2.6.0",
+    "ncp": "^1.0.1",
+    "replace": "^0.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/medseek-engineering/empower-ms-scaffold.git"
+  },
+  "keywords":[
+  "scaffold"
+  ]
+}
